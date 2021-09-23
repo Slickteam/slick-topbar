@@ -98,7 +98,7 @@ export class SlickTopBar extends LitElement {
       }
       
       .h-12 {
-        height: 35px;      
+        height: 30px;      
       }
       
       .button {

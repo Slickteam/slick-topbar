@@ -1,9 +1,5 @@
 import { html } from 'lit-html';
 import './my-element';
-const image = require('./SLICKTEAM-TYPO.png');
-const path = require('path');
-
-const filepath = path.resolve(image);
 
 export default {
     title: 'SlickTopbar',
@@ -23,7 +19,7 @@ function Template({
                       hideTitle= false,
                       titleContent = 'A TITLE',
                       hideLogo = false,
-                      imgSource = filepath,
+                      imgSource = '',
                       color = '#F97316',
                       backgroundColor = '#FFF',
                   }) {
