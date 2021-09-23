@@ -1,7 +1,5 @@
 import {LitElement, html, css} from 'lit-element'
 
-const image = require('./SLICKTEAM-TYPO.png')
-
 /**
  * Slick Topbar
  *
@@ -71,8 +69,7 @@ export class SlickTopBar extends LitElement {
       }
       
       .header {
-        margin : 50px;
-        width: 80%;
+        width: 100%;
         height: 80px;
         position: fixed;
         top: 0px;
@@ -159,7 +156,7 @@ export class SlickTopBar extends LitElement {
                                           html`` :
                                           html`
                                               <div>
-                                                  <img class="h-16" src="${image}" alt="The logo you want to display">
+                                                  <img class="h-16" src="${this.imgSource}" alt="The logo you want to display">
                                               </div>
                                           `}
                                 </span>
