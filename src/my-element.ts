@@ -33,7 +33,7 @@ export class SlickTopBar extends LitElement {
      *
      * A property to define the path of the image we want to have next to the clickable burger
      */
-    private readonly imgSource : string;
+    private readonly imgSrc : string;
     /**
      *
      * @private
@@ -49,7 +49,6 @@ export class SlickTopBar extends LitElement {
      */
     private readonly backgroundColor : string;
 
-    onClick? : () => void
     // @ts-ignore
     static get styles() {
         return css`
@@ -120,7 +119,7 @@ export class SlickTopBar extends LitElement {
             hideTitle: { type: Boolean },
             titleContent: { type: String },
             hideLogo: { type: Boolean },
-            imgSource: { type: String },
+            imgSrc: { type: String },
             color: { type: String },
             backgroundColor: { type: String }
         }
@@ -131,7 +130,7 @@ export class SlickTopBar extends LitElement {
         this.hideTitle = false;
         this.titleContent = 'Portail partners';
         this.hideLogo = false;
-        this.imgSource = '';
+        this.imgSrc = '';
         this.color = '#d75e01';
         this.backgroundColor = '#FFF';
     }
@@ -147,7 +146,7 @@ export class SlickTopBar extends LitElement {
             <header style="color: ${this.color}; background: ${this.backgroundColor};" class="header">
                 <div class="spacer">
                                 <span class="vertical-align">
-                                  <button @click=${this.onClick} style="color: ${this.color};" class="button">
+                                  <button @click=${this.drawer} style="color: ${this.color};" class="button">
                                     <svg class="h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                                     </svg>
@@ -156,7 +155,7 @@ export class SlickTopBar extends LitElement {
                                           html`` :
                                           html`
                                               <div>
-                                                  <img class="h-16" src="${this.imgSource}" alt="The logo you want to display">
+                                                  <img class="h-16" src="${this.imgSrc}" alt="The logo you want to display">
                                               </div>
                                           `}
                                 </span>
