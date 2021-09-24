@@ -53,10 +53,7 @@ export class SlickTopBar extends LitElement {
     static get styles() {
         return css`
       * {
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        display: flex;
+        
       }
       
       .light {
@@ -65,6 +62,32 @@ export class SlickTopBar extends LitElement {
       
       .dark {
         background: #101010;
+      }
+      
+      header{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        display: flex;
+      }
+      
+      div{
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      span{
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      button{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        display: flex;
       }
       
       .header {
