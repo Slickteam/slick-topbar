@@ -6,7 +6,7 @@
   <img src="https://user-images.githubusercontent.com/59962729/134512094-7018a5b9-9f1d-41de-aa3c-b102252ffb4a.png">
 </p>
 
-An authentication card that return's an event with a payload that contains both input's content. The web component was made using lit element.
+A topbar with a burger that emits an event when clicked on. There is the possibility of adding a logo and a title if needed. This web component was made using lit element.
 
 ## Installation
 ```bash
