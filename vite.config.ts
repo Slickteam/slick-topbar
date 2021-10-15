@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/my-element.ts',
+      entry: 'src/slick-topbar.ts',
       formats: ['es']
     },
     rollupOptions: {

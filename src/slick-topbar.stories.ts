@@ -1,5 +1,5 @@
 import { html } from 'lit-html';
-import './my-element';
+import './slick-topbar';
 
 export default {
     title: 'SlickTopbar',

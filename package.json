@@ -1,6 +1,6 @@
 {
   "name": "@slickteam/slick-topbar",
-  "version": "0.0.4",
+  "version": "0.0.4-1",
   "main": "dist/slick-topbar.es.js",
   "exports": {
     ".": "./dist/slick-topbar.es.js"

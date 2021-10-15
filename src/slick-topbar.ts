@@ -158,10 +158,9 @@ export class SlickTopBar extends LitElement {
         this.backgroundColor = '#FFF';
     }
 
-    drawer() {
+    _drawer() {
         const event = new Event('slick-burger')
-        dispatchEvent(event);
-        console.log(`The event 'slick-burger' has been dispatched`)
+        this.dispatchEvent(event);
     }
 
     render() {
@@ -169,7 +168,7 @@ export class SlickTopBar extends LitElement {
             <header style="color: ${this.color}; background: ${this.backgroundColor};" class="header">
                 <div class="spacer">
                                 <span class="vertical-align">
-                                  <button @click=${this.drawer} style="color: ${this.color};" class="button">
+                                  <button @click=${this._drawer} style="color: ${this.color};" class="button">
                                     <svg class="h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                                     </svg>
